@@ -1,7 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb"
 
 //const str = 'mongodb://localhost'
-const str = 'mongodb+srv://daniel:<password>@misdatos.fs00f.mongodb.net/?retryWrites=true&w=majority'
+const str = 'mongodb+srv://daniel:daniel123@misdatos.fs00f.mongodb.net/?retryWrites=true&w=majority'
 
 let connection = false
 let db
