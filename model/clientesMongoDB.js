@@ -1,5 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb"
 
+//const str = 'mongodb://localhost'
+const str = 'mongodb+srv://daniel:<password>@misdatos.fs00f.mongodb.net/?retryWrites=true&w=majority'
 
 let connection = false
 let db
@@ -7,7 +9,7 @@ let db
 const conectar = async _ => {
     try {
         console.log('Conectando a la base de datos...')
-        const client = new MongoClient('mongodb://localhost',{
+        const client = new MongoClient(str,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
